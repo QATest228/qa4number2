@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selectors.*;
 public class UrokChetiredva {
 
     @Test
-    void Solutiontest() {
+    void SolutionTest() {
         open("https://github.com/home");
         $(byTagAndText("button", "Solutions")).hover();
         $("li a[href='https://github.com/enterprise']").shouldHave(text("Enterprises")).click();
